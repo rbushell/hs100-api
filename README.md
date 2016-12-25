@@ -1,8 +1,12 @@
 # hs100-api
-[![NPM Version](https://img.shields.io/npm/v/hs100-api.svg)](https://www.npmjs.com/package/hs100-api)
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
 
+Hacked up version of https://github.com/plasticrake/hs100-api with support for TPLink LB130 wifi light bulbs
+
+
+
 TPLink HS100/HS110 WiFi Smart Plug API
+
 
 ## Example
 ```javascript
@@ -72,7 +76,11 @@ Turns the plug on or off.
 #### getScanInfo([refresh = false] [, timeout = 17]) _(promise)_
 Get list of networks.
 #### getModel _(promise)_
-
+Mess with the bulb on an LB130 (wifi light bulb)
+#### setLightState(value) _(promise)_
+Turns the light on or off
+#### setColor(hue,saturation,brightness) _(promise)_
+Change the color
 
 ## Credits
 Thanks to George Georgovassilis and Thomas Baust for figuring out the HS1XX encryption.
